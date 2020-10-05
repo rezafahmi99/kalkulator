@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/inputTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MASUKKAN DUA ANGKA"
+        android:textSize="18sp"/>
+    <EditText
+        android:id="@+id/angka1EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/angka2EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/tambah"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:onClick="tambah"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/kurang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:layout_marginRight="16dp"
+            android:onClick="kurang"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/kali"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="*"
+            android:layout_marginLeft="16dp"
+            android:onClick="kali"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/bagi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="/"
+            android:onClick="bagi"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bersihkan"
+        android:layout_marginBottom="40dp" />
+
+    <TextView
+        android:id="@+id/hslTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hasil"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/hasilTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20sp"/>
+</LinearLayout>
